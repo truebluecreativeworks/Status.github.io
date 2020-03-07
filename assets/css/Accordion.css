@@ -1,0 +1,90 @@
+/*Extendable Pages*/
+.accordion {
+	background: #333;
+	float: right;
+	font-weight: 225;
+	width: 100%;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.5s;
+	animation-name: FadeIn;
+	animation-duration: 4s;
+	-webkit-animation-name: FadeIn;
+	/* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s;
+	/* Safari 4.0 - 8.0 */
+}
+
+.A,
+.accordion:hover {
+	float: right;
+	/*background-color: #444;
+	backface-visibility: inherit;*/
+	border-radius: 20px;
+}
+
+.panel {
+	border-radius: 28px;
+	max-height: 0vh;
+	padding: 0 18px;
+	overflow: hidden;
+	transition: max-height 0.5s ease-in-out;
+	/*opacity: 0.5;*/
+}
+
+.accordion:after {
+	 --arrow-width: 12px;
+  --arrow-height: 22px;
+	content: "\21E9";
+	padding: 16px 20px;
+	border-radius:50%;
+	border: 2px solid aqua;
+	color: #777;
+	font-size: 24px;
+	font-weight: 225;
+	margin-left: 25px;
+	margin-top: -50px;
+	text-align: right;
+	float: right;
+	transition: 0.5s;
+	animation-name: FadeIn;
+	animation-duration: 4s;
+	-webkit-animation-name: FadeIn;
+	/* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s;
+	/* Safari 4.0 - 8.0 */
+}
+
+.A:after {
+	border: 2px solid aqua;
+	transition: 0.5s;
+	content: "\21E9";
+	float: right;
+	text-align: right;
+	animation-name: FadeIn;
+	animation-duration: 4s;
+	-webkit-animation-name: FadeIn;
+	/* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s;
+	/* Safari 4.0 - 8.0 */
+	transform: rotate(180deg);
+}
+
+
+@media screen and (max-width: 640px) {
+	
+	.panel {
+		border-radius: 28px;
+		max-height: 0vh;
+		padding: 0 0px;
+		overflow: hidden;
+		width: 100%;
+		transition: max-height 0.5s ease-in-out;
+		/*opacity: 0.5;*/
+	}
+	
+}
